@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/aleksieiev-o/word-maker/issues"
   },
-  "homepage": "",
+  "homepage": "https://aleksieiev-o.github.io/word-maker",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -20,7 +20,9 @@
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint-fix": "npm run lint --fix",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",

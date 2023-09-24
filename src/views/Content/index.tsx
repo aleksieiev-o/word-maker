@@ -4,8 +4,12 @@ import MainLayout from '../../layouts/Main.layout';
 import ContainerLayout from '../../layouts/Container.layout';
 import {Button, Icon, IconButton, Stack, Text} from '@chakra-ui/react';
 import {RefreshCw} from 'lucide-react';
+import {TypeHeroes} from '../../types/heroes.type';
+import {TypeWords} from '../../types/words.type';
 
 const Content: FC = (): ReactElement => {
+  const [heroes, setHeroes] = useState<TypeHeroes>([]);
+  const [words, setWords] = useState<TypeWords>([]);
   const [hero, setHero] = useState<string>('');
   const [word, setWord] = useState<string>('');
 

@@ -20,9 +20,7 @@
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint-fix": "npm run lint --fix",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",
@@ -35,7 +33,6 @@
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "env-cmd": "^10.1.0",
-    "gh-pages": "^6.0.0",
     "lucide-react": "^0.279.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

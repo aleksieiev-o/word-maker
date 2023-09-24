@@ -1,1 +1,1 @@
-export const APP_NAME = 'Word maker';
+export const APP_NAME = 'Words maker';

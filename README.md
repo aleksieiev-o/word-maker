@@ -1,4 +1,4 @@
-# Word maker application
+# Words maker application
 
 ## About the application
 

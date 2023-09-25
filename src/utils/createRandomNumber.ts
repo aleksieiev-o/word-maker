@@ -9,7 +9,7 @@ export const createRandomNumber = (min: number, max: number): IRandomNumber => {
   let randomNumber = -1;
 
   do {
-    randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    randomNumber = Math.round(min + Math.random() * (max - min));
   } while (randomNumber === previousRandomNumber);
 
   previousRandomNumber = randomNumber;
